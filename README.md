@@ -12,25 +12,25 @@ Setup
 
 Table Structure
 ---------------
-``CREATE TABLE quotes(
+``
+CREATE TABLE quotes(
 
     id bigint not null auto_increment,
     symbol varchar(100) not null,
     price DECIMAL(65) ,
     country varchar(4) not null,
-    primary key(id)
+    primary key(id));
+``
 
-);``
-
-``CREATE TABLE users(
+``
+CREATE TABLE users(
 
     id bigint not null auto_increment,
     login varchar(100) not null,
     password varchar(255) not null,
 
-    primary key(id)
-
-);``
+    primary key(id));
+``
     
 API Doc & Sample
 ----------------
