@@ -19,14 +19,17 @@ Table quotes Structure
     `country` varchar(4) not null,
     `primary` key(id));``
 
+
 Table users Structure
 ---------------
 ``CREATE TABLE `users`(
     `id` bigint not null auto_increment,
     `login` varchar(100) not null,
     `password` varchar(255) not null,
-
     primary key(id));``
+    
+    
+
     
 API Doc & Sample
 ----------------
