@@ -1,1 +1,2 @@
-# ideal_challenge_api
+# Finance Quotes API
+#
