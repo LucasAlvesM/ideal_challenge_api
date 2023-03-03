@@ -22,7 +22,7 @@ Table Structure
 
 );``
 
-CREATE TABLE users(
+``CREATE TABLE users(
 
     id bigint not null auto_increment,
     login varchar(100) not null,
@@ -30,31 +30,41 @@ CREATE TABLE users(
 
     primary key(id)
 
-);
-
-
+);``
     
 API Doc & Sample
 ----------------
 - List all quotes 
     ```
     GET /quotes
-    ```
     POST /quotes
+    CREATE /quotes
+    DELETE /quotes
     ```
-    
-    Body Example:
+    Body Quote Example:
     ```
     {
-        "id":"1",
+        "id":1,
         "symbol": "BTC",
-        "price": "2230890",
+        "price": "220900",
         "country": "EUA"
     }
     ```
-  
-Note 
+-   users
+    ```
+    GET /users
+    POST /users
+    CREATE /users
+    DELETE /users
+    
+    {
+        "login":"teste@api.com",
+        "password": "123456",
+    }
+    ```
+    
+- Note 
 to use the api, you must authenticate with the user's login and password, an access token will be generated when logging in
-![image](https://user-images.githubusercontent.com/71887970/222826870-53e529d7-51f8-4a3d-9e21-51e5fdb827cc.png)
+- ![image](https://user-images.githubusercontent.com/71887970/222826870-53e529d7-51f8-4a3d-9e21-51e5fdb827cc.png)
 
 -----
